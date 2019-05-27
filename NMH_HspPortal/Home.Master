@@ -132,6 +132,8 @@
 
                     <li><a href="/Hsp/Queries.aspx"><i class="fa fa-edit"></i> <span class="nav-label">Queries</span> </a></li>
 
+                    <li><a href="/Hsp/ServiceProvidersClaimOnMonth.aspx"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Provider Monthly Claims </span><span class="label label-danger pull-right">NEW</span></a></li>
+
                     <li><a href="/Hsp/HSPOfficers.aspx"><i class="fa fa-header"></i> <span class="nav-label">HSP Officers</span> </a></li>
 
                      <li><a href="/HspAdmin/AssignOfficers.aspx"><i class="fa fa-reply"></i> <span class="nav-label">Assign Provider/Officer</span> </a></li>

@@ -93,6 +93,7 @@
     <Content Include="Hsp\QueriedAdvice.aspx" />
     <Content Include="Hsp\Queries.aspx" />
     <Content Include="Hsp\ServiceProviders.aspx" />
+    <Content Include="Hsp\ServiceProvidersClaimOnMonth.aspx" />
     <Content Include="packages.config" />
     <Content Include="Content\css\images\kendoui.ttf" />
     <Content Include="Content\css\images\kendoui.woff" />
@@ -907,6 +908,13 @@
     </Compile>
     <Compile Include="Hsp\ServiceProviders.aspx.designer.cs">
       <DependentUpon>ServiceProviders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hsp\ServiceProvidersClaimOnMonth.aspx.cs">
+      <DependentUpon>ServiceProvidersClaimOnMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hsp\ServiceProvidersClaimOnMonth.aspx.designer.cs">
+      <DependentUpon>ServiceProvidersClaimOnMonth.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
