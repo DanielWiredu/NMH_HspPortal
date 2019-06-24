@@ -113,6 +113,10 @@ namespace NMH_HspPortal.Hsp
                 bfDateofAttendance.DataField = "DateOfAttendance";
                 bfDateofAttendance.DataFormatString = "{0:dd-MMM-yyyy}";
                 objGV.Columns.Add(bfDateofAttendance);
+                BoundField bfDiagnosis = new BoundField();
+                bfDiagnosis.HeaderText = "Diagnosis";
+                bfDiagnosis.DataField = "Diagnosis";
+                objGV.Columns.Add(bfDiagnosis);
                 BoundField bfTariff = new BoundField();
                 bfTariff.HeaderText = "TariffName";
                 bfTariff.DataField = "TariffName";
@@ -137,7 +141,7 @@ namespace NMH_HspPortal.Hsp
                 SqlConnection sqlConnection = new SqlConnection();
                 sqlConnection.ConnectionString = connectionString; //Connection Details   
                                                                    //select fields to mail example student details   
-                SqlCommand sqlCommand = new SqlCommand("select ClaimsNo, DateOfAttendance, TariffName, Claimed, ApprovedAmount, Tariff_X_RejectionComments, HspQuery from Vw_AdviceSlip_Outcome where claimsbatchno = '" + batchno + "' and hspquery is not null", sqlConnection); //select query command  
+                SqlCommand sqlCommand = new SqlCommand("select ClaimsNo, DateOfAttendance, TariffName, Diagnosis, Claimed, ApprovedAmount, Tariff_X_RejectionComments, HspQuery from Vw_AdviceSlip_Outcome where claimsbatchno = '" + batchno + "' and hspquery is not null", sqlConnection); //select query command  
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
                 sqlDataAdapter.SelectCommand = sqlCommand; //add selected rows to sql data adapter  
                 DataSet dataSetStud = new DataSet(); //create new data set  
